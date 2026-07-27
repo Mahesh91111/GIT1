@@ -6,7 +6,7 @@ from datetime import datetime
 # ===============================
 # Load API Key
 # ===============================
-load_dotenv()
+load_dotenv() ## this is a load the .env file and set the environment variables
 
 client = Groq(
     api_key=os.getenv("GROQ_API_KEY")
@@ -44,7 +44,7 @@ def calculator(expression):
 # AI Agent
 # ===============================
 
-class AIAgent:
+class AIAgent: ## agnt
 
     def __init__(self):
         self.messages = [
